@@ -1,0 +1,185 @@
+@font-face{
+    src: url(font/Manrope/static/Manrope-Regular.ttf);
+    font-family: "Manrope";
+}
+
+body{
+    margin: 0;
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+}
+
+#card{
+    width: 300px;
+    height: 495px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px hsl(212, 23%, 69%);
+}
+
+#picture img{
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+}
+
+h1{
+    color: hsl(217, 19%, 35%);
+    font-size: 16px;
+}
+
+p{
+    color: hsl(214, 17%, 51%);
+}
+
+#text, .person{
+    margin: 25px;
+}
+
+.person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.person>div img{
+    width: 45px;
+    border-radius: 50px;
+}
+
+#identity{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+#identity p{
+    margin: 0;
+}
+
+#identity p:first-of-type{
+    color: hsl(217, 19%, 35%);
+}
+
+#identity p:last-of-type{
+    color: hsl(212, 23%, 69%);
+}
+
+.share>p, #social p:last-of-type{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share>p{
+    background-color: hsl(210, 46%, 95%);
+}
+
+#social p:last-of-type{
+    margin-left: 30px;
+    background-color: hsl(212, 23%, 69%);
+}
+
+#social p:last-of-type img{
+    filter: brightness(200);
+}
+
+
+#social{
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    letter-spacing: 3px;
+    padding: 20px;
+    display: none;
+    position: relative;
+    bottom: 85px;
+}
+
+#social p{
+    margin: 0;
+}
+
+.triangle{
+    height : 0;
+    width : 0;
+    border-top : 13px solid hsl(217, 19%, 35%);
+    border-right : 13px solid transparent;
+    border-left : 13px solid transparent;
+    position: relative;
+    top: 25px;
+    right: 83px;
+    display: none;
+}
+
+#social p:nth-child(3){
+    padding-top: 2px;
+}
+
+.attribution{
+    position: fixed;
+    bottom: 5px;
+}
+
+@media(min-width: 860px){
+    #card{
+        width: 720px;
+        height: 250px;
+        display: flex;
+        margin-top: 250px;
+    }
+
+    #picture img{
+        height: 250px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    #text{
+        margin: 30px 30px 0 30px;
+    }
+
+    .person{
+        margin: 20px 30px 30px  30px;
+    }
+
+    #text{
+        padding-right: 10px;
+    }
+
+    #social{
+        width: 220px;
+        position: relative;
+        right: 0;
+        top: -150px;
+        left: 250px;
+        border-radius: 10px;
+        padding: 10px;
+        display: none;
+    }
+
+    #social p:last-of-type{
+        display: none;
+    }
+
+    .triangle{
+        display: block;
+    }
+}
